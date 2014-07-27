@@ -7,11 +7,11 @@ featuresV<-as.vector(fetures$V2)
 
 #Reading Files to Variables
 #Using col.names to achieve objective #4
-xTrain<-read.table(paste(dirbase,"train/X_train.txt", sep = ""), col.names = features)
+xTrain<-read.table(paste(dirbase,"train/X_train.txt", sep = ""), col.names = featuresV)
 yTrain<-read.table(paste(dirbase,"train/y_train.txt", sep = ""), col.names = c("Label"))
 subjectTrain<-read.table(paste(dirbase,"train/subject_train.txt", sep = ""), col.names = c("Subject"))
 
-xTest<-read.table(paste(dirbase,"test/X_test.txt", sep = ""), col.names = features)
+xTest<-read.table(paste(dirbase,"test/X_test.txt", sep = ""), col.names = featuresV)
 yTest<-read.table(paste(dirbase,"test/y_test.txt", sep = ""), col.names = c("Label"))
 subjectTest<-read.table(paste(dirbase,"test/subject_test.txt", sep = ""), col.names = c("Subject"))
 
